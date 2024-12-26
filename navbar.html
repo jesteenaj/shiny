@@ -7,11 +7,20 @@
     <title>Navbar with Sections</title>
     <!-- Font Awesome CDN for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* General Font Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin-top: 80px;
+        }
+
         /* Navbar Styles */
         .navbar {
             background-color: rgba(255, 105, 180, 0.8);
-            padding: 10px 20px;
+            padding: 20px 30px;
+            /* Increased padding for larger size */
             position: fixed;
             top: 0;
             width: 100%;
@@ -21,7 +30,8 @@
         .navbar-menu {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            /* Increased gap between items */
             margin: 0;
             padding: 0;
             align-items: center;
@@ -34,7 +44,8 @@
         .nav-link {
             text-decoration: none;
             color: white;
-            font-size: 18px;
+            font-size: 26px;
+            /* Increased font size */
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -44,14 +55,15 @@
         }
 
         .icon {
-            font-size: 20px;
+            font-size: 34px;
+            /* Increased icon size */
             display: flex;
             align-items: center;
         }
 
         .icon img {
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
         }
 
         /* Section Styles */
@@ -61,22 +73,55 @@
             height: 100vh;
         }
 
-
-
         #about {
             background-color: rgba(123, 147, 225, 0.6);
-            ;
-            /* Orange */
+            text-align: center;
+            /* Center-align text */
+            padding: 50px 20px;
+            /* Add padding for better spacing */
+            border-radius: 15px;
+            /* Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Add subtle shadow */
+        }
+
+        #about h2 {
+            font-size: 42px;
+            /* Bigger heading size */
+            font-weight: bold;
+            color: #fff;
+            /* White color for heading */
+            text-transform: uppercase;
+            /* Make text uppercase */
+            margin-bottom: 30px;
+        }
+
+        #about p {
+            font-size: 20px;
+            /* Larger paragraph text size */
+            color: #f0f8ff;
+            /* Light color for paragraphs */
+            line-height: 1.8;
+            /* Better spacing */
+            margin-bottom: 20px;
+            font-style: italic;
+            /* Italicize text for elegance */
         }
 
         #tokenomics {
             background-color: rgba(34, 193, 195, 0.7);
-            /* Teal */
         }
 
-        /* To give some space below the fixed navbar */
-        body {
-            margin-top: 60px;
+        /* Section Headings */
+        .section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -109,23 +154,21 @@
 
     <!-- Home Section -->
     <div id="home" class="section">
-        <h2>Home Section</h2>
-        <p>Welcome to the home section of the page.</p>
+
     </div>
 
-    <!-- About Section -->
     <div id="about" class="section">
-        <h2>About Section</h2>
-        <p>🎭 Inspired by the gripping South Korean series, our token incorporates the intense drama of SQUID GAME 2,
-            bringing you into a world of financial challenges, strategic gameplay, and heart-pounding excitement..</p>
 
-        <p> 💰 Looking for a monkey-making opportunity? You're in the right place! Our token combines the allure of
+        <p>🎭 Inspired by the gripping South Korean series, our token incorporates the intense drama of SQUID GAME 2,
+            bringing you into a world of financial challenges, strategic gameplay, and heart-pounding excitement.</p>
+        <p>💰 Looking for a money-making opportunity? You're in the right place! Our token combines the allure of
             SQUID GAME 2 with the potential for lucrative gains on the Solana blockchain. Don't miss out on this unique
-            adventure in the crypto world.</p>
-        <p> JOIN US AND BE PART OF THE SQUID GAME 2-INSPIRED REVOLUTION ON THE SOLANA CHAIN. IT'S NOT JUST A TOKEN; IT'S
-            AN EXPERIENCE! 🚀🎮💸
-        </p>
+            adventure in the crypto world.</p>
+        <p>JOIN US AND BE PART OF THE SQUID GAME 2-INSPIRED REVOLUTION ON THE SOLANA CHAIN. IT'S NOT JUST A TOKEN; IT'S
+            AN EXPERIENCE! 🚀🎮💸</p>
     </div>
+
+
 
     <!-- Tokenomics Section -->
     <div id="tokenomics" class="section">
